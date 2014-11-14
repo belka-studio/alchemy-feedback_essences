@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 4.1.7"
+  s.add_runtime_dependency 'alchemy_cms', ['~> 3.0.0']
 
   s.add_development_dependency "sqlite3"
 end
