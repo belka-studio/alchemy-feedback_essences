@@ -1,0 +1,12 @@
+<% cache(content) do %>
+    <div class="content_editor">
+      <label><%= t('alchemy.essences.feedback.per_page') %></label>
+      <%= number_field_tag(
+          content.form_field_name(:per_page),
+          content.essence.per_page,
+          class: ['thin_border', html_options[:class]].join(' '),
+          style: html_options[:style],
+          in: 1...100
+      ) %>
+    </div>
+<% end %>
