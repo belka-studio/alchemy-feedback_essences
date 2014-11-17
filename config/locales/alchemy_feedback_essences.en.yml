@@ -1,5 +1,7 @@
 en:
   alchemy:
     essences:
-      feedback:
+      feedback_list:
         per_page: per page
+      feedback:
+        post_to: post to

@@ -1,5 +1,7 @@
 ru:
   alchemy:
     essences:
-      feedback:
+      feedback_list:
         per_page: Количество на странице
+      feedback:
+        post_to: POST to

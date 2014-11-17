@@ -1,15 +1,9 @@
-<% feedbacks = content.ingredient %>
-<% if feedbacks.present? %>
-    <% feedbacks.each do |feedback| %>
-        <div class="media">
-          <div class="media-body">
-            <h3 class="media-heading"><%= feedback.name %></h3>
-              <%= feedback.text %>
-            <br>
-          </div>
-        </div>
-        <hr>
-    <% end %>
-<% else %>
-    <p>No feedbacks</p>
+<%- @feedback = Alchemy::Feedback.new %>
+<%= form_for @feedback, url: {action: 'create'} do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_area :text %>
+    <%= f.text_field :phone %>
+    <%= f.text_field :email %>
+
+    <%= f.submit %>
 <% end %>
