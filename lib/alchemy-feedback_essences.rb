@@ -1,7 +1,5 @@
-module Alchemy
-  module FeedbackEssences
+module AlchemyFeedbackEssences
 
-  end
 end
 
 require "alchemy_cms"

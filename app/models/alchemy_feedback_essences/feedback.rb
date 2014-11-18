@@ -1,4 +1,4 @@
-module Alchemy
+module AlchemyFeedbackEssences
   class Feedback < ActiveRecord::Base
     scope :approved, -> { where(approved: true).order(created_at: :desc) }
   end

@@ -1,13 +1,13 @@
 module Alchemy
   module Admin
-    class FeedbacksController < ResourcesController
+    class FeedbacksController < Alchemy::Admin::ResourcesController
 
       def new
-        @feedback = Alchemy::Feedback.new
+        @feedback = AlchemyFeedbackEssences::Feedback.new
       end
 
       def edit
-        @feedback = Alchemy::Feedback.find(params[:id])
+        @feedback = AlchemyFeedbackEssences::Feedback.find(params[:id])
       end
     private
       def resource_params

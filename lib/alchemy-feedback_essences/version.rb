@@ -1,5 +1,3 @@
-module Alchemy
-  module FeedbackEssences
-    VERSION = "0.0.1"
-  end
+module AlchemyFeedbackEssences
+  VERSION = "0.0.2"
 end

@@ -5,7 +5,7 @@ module Alchemy
     after_initialize :init
 
     def init
-      self.post_to ||= Alchemy::FeedbackEssences.configuration.default_post_to
+      self.post_to ||= AlchemyFeedbackEssences.configuration.default_post_to
     end
   end
 end

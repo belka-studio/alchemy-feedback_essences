@@ -1,4 +1,4 @@
-module Alchemy
+module AlchemyFeedbackEssences
   class FeedbacksController < ActionController::Base
     def create
       @feedback = Alchemy::Feedback.new(feedback_params)
