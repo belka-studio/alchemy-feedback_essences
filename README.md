@@ -21,7 +21,7 @@ And then execute:
 
 1. After installing, prepare your database with:
 
-        $ rake alchemy-feedback_essences:install:migrations db:migrate
+        $ rake alchemy_feedback_essences:install:migrations db:migrate
 
 2. In your `elements.yml` add new essence to your element of choice.
 
