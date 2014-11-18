@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    alchemy-feedback_essences (0.0.1)
+    alchemy-feedback_essences (0.0.2)
       alchemy_cms (~> 3.0.0)
       rails (~> 4.1.1)
 

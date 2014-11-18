@@ -6,7 +6,7 @@ require "alchemy-feedback_essences/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "alchemy-feedback_essences"
-  s.version     = Alchemy::FeedbackEssences::VERSION
+  s.version     = AlchemyFeedbackEssences::VERSION
   s.authors     = ["Dmitry Tsvetkov"]
   s.email       = ["vlaew5@gmail.com"]
   s.homepage    = "http://belka-studio.ru"
