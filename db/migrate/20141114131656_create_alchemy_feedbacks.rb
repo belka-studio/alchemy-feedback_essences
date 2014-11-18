@@ -1,6 +1,6 @@
 class CreateAlchemyFeedbacks < ActiveRecord::Migration
   def change
-    create_table :alchemy_feedbacks do |t|
+    create_table :feedbacks do |t|
       t.string :name
       t.text :text, :null => false, :default => ''
       t.boolean :approved, :null => false, :default => false

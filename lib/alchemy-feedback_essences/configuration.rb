@@ -16,7 +16,7 @@ module AlchemyFeedbackEssences
       :default_post_to
 
     def initialize
-      @default_post_to = feedbacks_path
+      @default_post_to = ''#feedbacks_path
     end
   end
 end
