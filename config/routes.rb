@@ -1,4 +1,4 @@
-AlchemyFeedbackEssences::Engine.routes.draw do
+Alchemy::Engine.routes.draw do
   resources :feedbacks, only: [:create]
 
   namespace :admin do

@@ -1,4 +1,4 @@
-<%= form_for :feedback, url: Rails.application.routes.url_helpers.feedbacks_path do |f| %>
+<%= form_for :feedback, url: feedbacks_path do |f| %>
     <%= f.text_field :name %>
     <%= f.text_area :text %>
     <%= f.text_field :phone %>
