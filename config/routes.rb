@@ -1,7 +1,11 @@
-AlchemyFeedbackEssences::Engine.routes.draw do
-  resources :feedbacks, only: [:create]
+Rails.application.routes.draw do
+  namespace :alchemy_feedback_essences do
+    resources :feedbacks, only: [:create]
+  end
 
-  namespace :admin do
-    resources :feedbacks
+  namespace :alchemy do
+    namespace :admin do
+      resources :feedbacks
+    end
   end
 end
