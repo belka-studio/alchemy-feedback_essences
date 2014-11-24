@@ -1,7 +1,7 @@
 module AlchemyFeedbackEssences
   class FeedbacksController < ActionController::Base
     def create
-      @feedback = Alchemy::Feedback.new(feedback_params)
+      @feedback = Feedback.new(feedback_params)
       @feedback.save
       render :json => {
         :status => @feedback.errors.blank? ? 'ok' : 'fail',
