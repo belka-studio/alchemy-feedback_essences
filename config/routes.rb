@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  namespace :alchemy_feedback_essences do
-    resources :feedbacks, only: [:create]
-  end
+  post '/feedbacks' => 'alchemy_feedback_essences/feedbacks#create'
+  # namespace :alchemy_feedback_essences do
+  #   resources :feedbacks, only: [:create]
+  # end
 
   namespace :alchemy do
     namespace :admin do
