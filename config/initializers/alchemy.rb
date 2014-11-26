@@ -1,3 +1,5 @@
+require "alchemy_cms"
+
 Alchemy::Modules.register_module({
   name: 'feedbacks',
   engine_name: 'alchemy_feedback_essences',   # The engine_name set in your Rails::Engine class.
