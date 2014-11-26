@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   #   resources :feedbacks, only: [:create]
   # end
 
-  namespace :alchemy do
-    namespace :admin do
-      resources :feedbacks
-    end
+  namespace :admin do
+    resources :feedbacks
   end
 end
