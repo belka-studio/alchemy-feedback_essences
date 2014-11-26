@@ -1,3 +1,4 @@
+require 'alchemy-feedback_essences/ability'
 
 Alchemy::Modules.register_module({
   name: 'feedbacks',
