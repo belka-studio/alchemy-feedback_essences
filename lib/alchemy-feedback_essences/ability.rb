@@ -6,6 +6,7 @@ module AlchemyFeedbackEssences
       return if user.nil?
       if user.has_role?(:author) || user.has_role?(:editor) || user.has_role?(:admin)
         can :manage, AlchemyFeedbackEssences::Feedback
+        can :manage, :admin_feedbacks
       end
     end
   end
