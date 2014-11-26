@@ -1,5 +1,7 @@
 ru:
   alchemy:
+    modules:
+      feedbacks: Отзывы
     essences:
       feedback_list:
         per_page: Количество на странице

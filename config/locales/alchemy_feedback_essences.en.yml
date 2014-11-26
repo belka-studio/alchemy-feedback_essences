@@ -1,5 +1,7 @@
 en:
   alchemy:
+    modules:
+      feedbacks: Feedbacks
     essences:
       feedback_list:
         per_page: per page
