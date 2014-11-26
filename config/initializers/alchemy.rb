@@ -1,5 +1,3 @@
-require 'alchemy-feedback_essences/ability'
-
 Alchemy::Modules.register_module({
   name: 'feedbacks',
   engine_name: 'alchemy_feedback_essences',   # The engine_name set in your Rails::Engine class.
@@ -18,7 +16,3 @@ Alchemy::Modules.register_module({
     ]
 }
 })
-
-# Loading authorization rules and register them to auth engine instance
-Alchemy.register_ability AlchemyFeedbackEssences::Ability
-# Alchemy::AuthEngine.get_instance.load(File.join(File.dirname(__FILE__), '../../lib/alchemy-feedback_essences/ability.rb'))
