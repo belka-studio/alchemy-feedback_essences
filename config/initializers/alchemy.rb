@@ -1,4 +1,3 @@
-require "alchemy_cms"
 
 Alchemy::Modules.register_module({
   name: 'feedbacks',
@@ -11,8 +10,8 @@ Alchemy::Modules.register_module({
     icon: 'module_icon',                # Class of icon that will be rendered as navigation icon.
     sub_navigation: [
       {
-          name: 'modules.products',       # The name for the subnavigation tab (translated via I18n).
-          controller: '/admin/products',  # Controller that will be used.
+          name: 'modules.feedbacks',       # The name for the subnavigation tab (translated via I18n).
+          controller: '/admin/feedbacks',  # Controller that will be used.
           action: 'index'                 # Controller action that will be used.
       }
     ]
@@ -20,4 +19,5 @@ Alchemy::Modules.register_module({
 })
 
 # Loading authorization rules and register them to auth engine instance
-# Alchemy::Auth::Engine.get_instance.load(File.join(File.dirname(__FILE__), '../../lib/alchemy-feedback_essences/ability.rb'))
+Alchemy.register_ability AlchemyFeedbackEssences::Ability
+# Alchemy::AuthEngine.get_instance.load(File.join(File.dirname(__FILE__), '../../lib/alchemy-feedback_essences/ability.rb'))
